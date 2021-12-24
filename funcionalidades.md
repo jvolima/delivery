@@ -42,5 +42,13 @@
 - O id do entregador deve vir como nulo até um entregador assumir essa entrega.
 - A data de encerramento da entrega deve vir como nula para quando o entregador terminar a entrega essa data ser preenchida.
 
-**RN**~
+**RN**
 - Não deve ser possível cadastrar uma nova entrega se o cliente não estiver autenticado no programa.
+
+## Listagem de entregas disponíveis
+
+**RF**
+- Deve ser possível um entregador visualizar as entregas disponíveis.
+
+**RN**
+- Apenas entregadores autenticados podem acessar essa rota.
