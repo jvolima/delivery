@@ -25,3 +25,12 @@
 
 **RN**
 - Não deve ser possível cadastrar um novo entregador se já tiver um entregador com o username informado.
+
+## Autenticação de entregadores
+
+**RF**
+- Deve ser possível autenticar um entregador.
+
+**RN**
+- Não deve ser possível autenticar um entregador se o username não existir.
+- Não deve ser possível autenticar um entregador se a senha do entregador encontrado pelo username não bater com a senha informada.
