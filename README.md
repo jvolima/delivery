@@ -7,3 +7,6 @@
 - Typescript
 - Express
 - JsonWebToken
+
+## Funcionalidades
+- Confira as funcionalidades da API [funcionalidades](./funcionalidades.md)
