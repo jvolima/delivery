@@ -12,12 +12,11 @@
 - Confira as funcionalidades da API [funcionalidades](./funcionalidades.md)
 
 ## Como executar
-- Acessar a pasta pelo terminal e rodar esse comando:
+- Para instalar as dependências do projeto, acesse a pasta pelo terminal e use esse comando:
 ```
   yarn
 ```
-- Esse comando irá instalar as dependências do projeto
-- Após isso acessar a pasta pelo Vscode e rodar o comando no terminal do Vscode:
+- Após isso, acesse a pasta pelo Vscode e use o comando no terminal do Vscode:
 ```
   yarn dev
 ```
