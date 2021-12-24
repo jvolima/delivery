@@ -17,3 +17,11 @@
 **RN**
 - Não deve ser possível autenticar um cliente se o username não existir.
 - Não deve ser possível autenticar um cliente se a senha do cliente encontrado pelo username não bater com a senha informada.
+
+## Cadastro de entregadores
+
+**RF**
+- Deve ser possível cadastrar um novo entregador.
+
+**RN**
+- Não deve ser possível cadastrar um novo entregador se já tiver um entregador com o username informado.
