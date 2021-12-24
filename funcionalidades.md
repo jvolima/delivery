@@ -34,3 +34,13 @@
 **RN**
 - Não deve ser possível autenticar um entregador se o username não existir.
 - Não deve ser possível autenticar um entregador se a senha do entregador encontrado pelo username não bater com a senha informada.
+
+## Cadastro de entregas
+
+**RF**
+- Deve ser possível um cliente cadastrar uma nova entrega.
+- O id do entregador deve vir como nulo até um entregador assumir essa entrega.
+- A data de encerramento da entrega deve vir como nula para quando o entregador terminar a entrega essa data ser preenchida.
+
+**RN**~
+- Não deve ser possível cadastrar uma nova entrega se o cliente não estiver autenticado no programa.
