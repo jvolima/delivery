@@ -52,3 +52,11 @@
 
 **RN**
 - Apenas entregadores autenticados podem acessar essa rota.
+
+## Adicionando entregador em uma entrega
+
+**RF**
+- Deve ser possível um entregador se cadastrar em uma entrega disponível.
+
+**RN**
+- Não deve ser possível um entregador se cadastrar em uma entrega indisponível.
