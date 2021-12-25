@@ -68,3 +68,11 @@
 
 **RN**
 - Apenas clientes autenticados podem acessar essa rota.
+
+## Listagem de entregas do entregador
+
+**RF**
+- Deve ser possível um entregador poder visualizar seu histórico de entregas.
+
+**RN**
+- Apenas entregadores autenticados podem acessar essa rota.
