@@ -60,3 +60,11 @@
 
 **RN**
 - Não deve ser possível um entregador se cadastrar em uma entrega indisponível.
+
+## Listagem de entregas do cliente 
+
+**RF**
+- Deve ser possível um cliente poder visualizar seu histórico de entregas.
+
+**RN**
+- Apenas clientes autenticados podem acessar essa rota.

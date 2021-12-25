@@ -4,6 +4,7 @@ import { ensureAuthenticateDeliveryman } from "./middlewares/ensureAuthenticateD
 import { AuthenticateClientController } from "./modules/accounts/useCases/authenticateClient/AuthenticateClientController";
 import { AuthenticateDeliverymanController } from "./modules/accounts/useCases/authenticateDeliveryman/AuthenticateDeliverymanController";
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
+import { FindAllDeliveriesController } from "./modules/clients/useCases/findAllDeliveries/FindAllDeliveriesController";
 import { CreateDeliveryController } from "./modules/deliveries/useCases/createDelivery/CreateDeliveryController";
 import { FindAllAvailableController } from "./modules/deliveries/useCases/findAllAvailable/FindAllAvailableController";
 import { UpdateDeliverymanController } from "./modules/deliveries/useCases/updateDeliveryman/UpdateDeliverymanController";
@@ -18,12 +19,14 @@ const authenticateDeliverymanController = new AuthenticateDeliverymanController(
 const createDeliveryController = new CreateDeliveryController();
 const findAllAvailableController = new FindAllAvailableController();
 const updateDeliverymanController = new UpdateDeliverymanController();
-
-routes.post("/deliveryman/authenticate", authenticateDeliverymanController.handle);
-routes.post("/client/authenticate", authenticateClientController.handle);
+const findAllDeliveriesController = new FindAllDeliveriesController();
 
 routes.post("/deliveryman", createDeliverymanController.handle);
+routes.post("/deliveryman/authenticate", authenticateDeliverymanController.handle);
+
 routes.post("/client", createClientController.handle);
+routes.post("/client/authenticate", authenticateClientController.handle);
+routes.get("/client/deliveries", ensureAuthenticateClient, findAllDeliveriesController.handle);
 
 routes.post("/delivery", ensureAuthenticateClient, createDeliveryController.handle);
 routes.get("/delivery/available", ensureAuthenticateDeliveryman, findAllAvailableController.handle);
