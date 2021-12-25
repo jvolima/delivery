@@ -76,3 +76,11 @@
 
 **RN**
 - Apenas entregadores autenticados podem acessar essa rota.
+
+## Marcando a entrega como concluída
+
+**RF**
+- Deve ser possível o entregador marcar alguma entrega sua como concluída preenchendo a data de entrega.
+
+**RN**
+- Não deve ser possível um entregador preencher a data de entrega se essa entrega pertence a outro entregador.
